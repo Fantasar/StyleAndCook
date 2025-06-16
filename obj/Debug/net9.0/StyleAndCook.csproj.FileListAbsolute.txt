@@ -1,0 +1,14 @@
+C:\Users\lapiq\StyleAndCook\bin\Debug\net9.0\StyleAndCook.exe
+C:\Users\lapiq\StyleAndCook\bin\Debug\net9.0\StyleAndCook.deps.json
+C:\Users\lapiq\StyleAndCook\bin\Debug\net9.0\StyleAndCook.runtimeconfig.json
+C:\Users\lapiq\StyleAndCook\bin\Debug\net9.0\StyleAndCook.dll
+C:\Users\lapiq\StyleAndCook\bin\Debug\net9.0\StyleAndCook.pdb
+C:\Users\lapiq\StyleAndCook\obj\Debug\net9.0\StyleAndCook.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lapiq\StyleAndCook\obj\Debug\net9.0\StyleAndCook.AssemblyInfoInputs.cache
+C:\Users\lapiq\StyleAndCook\obj\Debug\net9.0\StyleAndCook.AssemblyInfo.cs
+C:\Users\lapiq\StyleAndCook\obj\Debug\net9.0\StyleAndCook.csproj.CoreCompileInputs.cache
+C:\Users\lapiq\StyleAndCook\obj\Debug\net9.0\StyleAndCook.dll
+C:\Users\lapiq\StyleAndCook\obj\Debug\net9.0\refint\StyleAndCook.dll
+C:\Users\lapiq\StyleAndCook\obj\Debug\net9.0\StyleAndCook.pdb
+C:\Users\lapiq\StyleAndCook\obj\Debug\net9.0\StyleAndCook.genruntimeconfig.cache
+C:\Users\lapiq\StyleAndCook\obj\Debug\net9.0\ref\StyleAndCook.dll
