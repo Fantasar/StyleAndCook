@@ -1,22 +1,24 @@
-namespace StyleAndCook.Game
+namespace StyleAndCook.Entities;
+
+public enum CardRarity { Common, Rare, Epic, Legendary }
+
+public class Card
 {
-    public class Card
+    public string Name { get; set; }
+    public string Description { get; set; }
+    public CardRarity Rarity { get; set; }
+    public CardEffect Effect { get; set; }
+
+    public Card(string name, string description, CardRarity rarity, CardEffect effect)
     {
-        public string Nom { get; set; }
-        public string Description { get; set; }
-        public int EffetArgent { get; set; }
+        Name = name;
+        Description = description;
+        Rarity = rarity;
+        Effect = effect;
+    }
 
-        public Card(string nom, string description, int effetArgent)
-        {
-            Nom = nom;
-            Description = description;
-            EffetArgent = effetArgent;
-        }
-
-        public void AppliquerEffet(Player joueur)
-        {
-            joueur.Argent += EffetArgent;
-            Console.WriteLine($"{Nom} appliqué à {joueur.Nom} : {EffetArgent} $");
-        }
+    public void Activate(Player source, Player target)
+    {
+        Effect?.Apply(source, target);
     }
 }

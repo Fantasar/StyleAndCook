@@ -1,32 +1,11 @@
-﻿using System;
+﻿using StyleAndCook.Entities;
 using StyleAndCook.Game;
 
-class Program
-{
-    static void Main()
-    {
-        Console.WriteLine("Bienvenue dans Style&Cook ");
+var resto1 = new Restaurant(RestaurantType.FastFood);
+var resto2 = new Restaurant(RestaurantType.Pizzeria);
 
-        Player joueur = new Player("Alice");
-        Deck deck = new Deck();
+var player1 = new Player("Alice", resto1);
+var player2 = new Player("Bob", resto2);
 
-        Console.WriteLine($"Joueur : {joueur.Nom}, Argent : {joueur.Argent}$");
-        Console.WriteLine();
-
-        for (int tour = 1; tour <= 3; tour++) // 3 tours de jeu
-        {
-            Console.WriteLine($"🔁 Tour {tour}:");
-
-            Card carte = deck.TirerCarte();
-            Console.WriteLine($"Carte tirée : {carte.Nom} - {carte.Description}");
-
-            carte.AppliquerEffet(joueur);
-
-            Console.WriteLine($"Argent actuel : {joueur.Argent}$");
-            Console.WriteLine();
-        }
-
-        Console.WriteLine("🎉 Fin de partie !");
-        Console.WriteLine($"Argent final : {joueur.Argent}$");
-    }
-}
+var game = new GameManager(player1, player2);
+game.StartGame();

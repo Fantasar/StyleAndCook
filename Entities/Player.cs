@@ -1,14 +1,25 @@
-namespace StyleAndCook.Game
-{
-    public class Player
-    {
-        public string Nom { get; private set; }
-        public int Argent { get; set; }
+namespace StyleAndCook.Entities;
 
-        public Player(string nom)
-        {
-            Nom = nom;
-            Argent = 100; // Valeur par défaut
-        }
+public class Player
+{
+    public string Name { get; set; }
+    public Restaurant Restaurant { get; set; }
+    public int Money { get; set; }
+    public int Reputation { get; set; }
+    public List<Card> Hand { get; set; }
+
+    public Player(string name, Restaurant restaurant)
+    {
+        Name = name;
+        Restaurant = restaurant;
+        Money = 0;
+        Reputation = 0;
+        Hand = new List<Card>();
+    }
+
+    public void PlayCard(Card card, Player opponent)
+    {
+        card.Activate(this, opponent);
+        Hand.Remove(card);
     }
 }
