@@ -9,9 +9,9 @@ namespace StyleAndCook.Deck;
 public class Card_PromoFlyers : Card
 {
     public Card_PromoFlyers() : base(
-        "Promo Flyers",
-        "Distribuez des flyers dans la rue : gagne +10 en réputation.",
-        CardRarity.Common,
-        new Effect_GainReputation(10)
+        name: "Promo Flyers",
+        description: "Distribuez des flyers dans la rue : gagne +10 en réputation.",
+        rarity: CardRarity.Common,
+        effect: new Effect_GainReputation(10)
     ) {}
 }

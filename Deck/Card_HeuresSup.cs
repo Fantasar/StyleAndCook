@@ -9,9 +9,9 @@ namespace StyleAndCook.Deck;
 public class Card_HeuresSup : Card
 {
     public Card_HeuresSup() : base(
-        "Heures Sup",
-        "Double les revenus pendant 2 tours.",
-        CardRarity.Uncommon,
-        new Effect_TemporaryIncomeBoost(2)
+        name: "Heures Sup",
+        description: "Double les revenus pendant 2 tours.",
+        rarity: CardRarity.Uncommon,
+        effect: new Effect_TemporaryIncomeBoost(2)
     ){}
 }

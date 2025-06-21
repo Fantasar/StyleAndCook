@@ -9,9 +9,9 @@ namespace StyleAndCook.Deck;
 public class Card_EmploiNonDéclaré : Card
 {
     public Card_EmploiNonDéclaré() : base(
-        "Emploi Non Déclaré",
-        "Gagne 30$ illégalement. Risque moralité -10.",
-        CardRarity.Epic,
-        new Effect_RiskyMoney(30, 10)
+        name: "Emploi Non Déclaré",
+        description: "Gagne 30$ illégalement. Risque moralité -10.",
+        rarity: CardRarity.Epic,
+        effect: new Effect_RiskyMoney(30, 10)
     ) {}
 }
