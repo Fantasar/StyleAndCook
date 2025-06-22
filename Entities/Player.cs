@@ -8,6 +8,7 @@ public class Player
     public int Reputation { get; set; }
     public List<Card> Hand { get; set; }
 
+    public int Morality { get; set; } = 100; // ou une autre valeur de départ    
     public Player(string name, Restaurant restaurant)
     {
         Name = name;

@@ -1,15 +1,21 @@
-public class Effect_GainReputation : CardEffect
+using System;
+using StyleAndCook.Entities; // 🔹 Ce using est crucial pour accéder à Player et CardEffect
+
+namespace StyleAndCook.Entities.Effects
 {
-    public int Amount { get; }
-
-    public Effect_GainReputation(int amount) : base("Gagne réputation")
+    public class Effect_GainReputation : CardEffect
     {
-        Amount = amount;
-    }
+        public int Amount { get; }
 
-    public override void Apply(Player source, Player target)
-    {
-        source.Reputation += Amount;
-        Console.WriteLine($"{source.Name} gagne {Amount} points de réputation grâce à une promo flyer !");
+        public Effect_GainReputation(int amount) : base("Gagne réputation")
+        {
+            Amount = amount;
+        }   
+
+        public override void Apply(Player source, Player target)
+        {
+            source.Reputation += Amount;
+            Console.WriteLine($"{source.Name} gagne {Amount} points de réputation grâce à une promo flyer !");
+        }
     }
 }

@@ -1,5 +1,6 @@
 using StyleAndCook.Entities;
-
+using System.Collections.Generic;
+using StyleAndCook.Deck;
 namespace StyleAndCook.Deck;
 
 /// <summary>
@@ -15,10 +16,8 @@ public static class DefaultCards
     {
         return new List<Card>
         {
-            /// <Malus> : Carte qui peut être jouée par l'adversaire pour nuire au joueur.
             new Card_EmploiNonDéclaré(),
-            new Card_ContrôleSanitaire(),
-            /// <Bonus> : Carte qui donne un avantage au joueur.
+            new Card_ControleSanitaire(),
             new Card_HeuresSup(),
             new Card_BonneGestion(),
             new Card_PromoFlyers()

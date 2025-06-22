@@ -1,6 +1,13 @@
 namespace StyleAndCook.Entities;
 
-public enum CardRarity { Common, Rare, Epic, Legendary }
+public enum CardRarity 
+{ 
+    Common, 
+    Uncommon,
+    Rare, 
+    Epic, 
+    Legendary 
+}
 
 public class Card
 {
